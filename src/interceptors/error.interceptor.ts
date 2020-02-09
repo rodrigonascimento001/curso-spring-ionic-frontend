@@ -34,7 +34,7 @@ export class ErrorInterceptor implements HttpInterceptor {
         }) as any;
     }
 
-    handle403{
+    handle403(){
         this.storage.setLocalUser(null);
     }
 }
